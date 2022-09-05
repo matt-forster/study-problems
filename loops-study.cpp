@@ -10,11 +10,11 @@ using namespace std;
  *
  *    positive: ->
  *
- *    0-1-2-3-4
+ *    0 - 1 - 2 - 3 - 4
  *
  *    negative: <-
  *
- *    (-4)-(-3)-(-2)-(-1)-0
+ *    (-4) - (-3) - (-2) - (-1) - 0
  *
  * @return int
  */
@@ -28,14 +28,18 @@ int main () {
   cout << " " << endl; // whitespace
 
   // Positive Numbers: 0 <= -4 is false, so it won't run for negative numbers
-  for (count; count <= userNum; ++count) { // count is set to zero in declaration. If count is less than user input, increment
+  for (count; count < userNum; ++count) { // count is set to zero in declaration. If count is less than user input, increment
     cout << count << endl; // display the count up to user input
   }
 
+  // cout << "finished first: " << count << endl;
+
   // Negative numbers: 0 >= 4 is false, so it won't run for positive numbers
-  for (count; count >= userNum; --count) { // count is set to zero in decalaration. If count is greater than user input, decrement
+  for (count; count > userNum; --count) { // count is set to zero in decalaration. If count is greater than user input, decrement
     cout << count << endl; // display the count up to user input
   }
+
+  cout << userNum << endl;
 
   return 0;
 }

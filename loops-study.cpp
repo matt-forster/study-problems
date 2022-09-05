@@ -19,31 +19,25 @@ using namespace std;
  * @return int
  */
 int main () {
-
-  int count = 0;
   int userNum;
+  int count;
 
   cout << "Enter a number" << endl; // prompt user for a number
   cin >> userNum; // user enters number
   cout << " " << endl; // whitespace
 
   // Positive Numbers: 0 <= -4 is false, so it won't run for negative numbers
-  for (count; count < userNum; ++count) { // count is set to zero in declaration. If count is less than user input, increment
+  for (count = 0; count <= userNum; ++count) { // count is set to zero in declaration. If count is less than user input, increment
     cout << count << endl; // display the count up to user input
   }
-
-  // cout << "finished first: " << count << endl;
 
   // Negative numbers: 0 >= 4 is false, so it won't run for positive numbers
-  for (count; count > userNum; --count) { // count is set to zero in decalaration. If count is greater than user input, decrement
+  for (count = 0; count >= userNum; --count){ // count is set to zero in decalaration. If count is greater than user input, decrement
     cout << count << endl; // display the count up to user input
   }
-
-  cout << userNum << endl;
 
   return 0;
 }
-
 
 /**
   //  If you use the ++ operator as a prefix like: ++var, the value of var is incremented by 1; then it returns the value.

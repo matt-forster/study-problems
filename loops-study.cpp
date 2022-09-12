@@ -40,8 +40,9 @@ int main () {
 }
 
 /**
-  //  If you use the ++ operator as a prefix like: ++var, the value of var is incremented by 1; then it returns the value.
+  // If you use the ++ operator as a prefix like: ++var, the value of var is incremented by 1; then it returns the value.
   // If you use the ++ operator as a postfix like: var++, the original value of var is returned first; then var is incremented by 1.
+
   count = 0;
   cout << "postfix:" << endl;
   for (count; count-- < userNum; ) { // count is set to zero in declaration. If count is less than user input, increment

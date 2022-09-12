@@ -1,4 +1,4 @@
-
+// Date: 2022-09-11
 
 
 /*
@@ -106,6 +106,8 @@ int main () {
     sumOfPositionValues += positionValue; // sumOfPositionValues = (sumOfPositionValues + positionValues)
     index++;
   }
+
+  // JavaScript: userInputsBinaryNumber.split('').reduce((sum, value, index) => sum + (Math.pow(2, ((userInputsBinaryNumber.length - 1) - index)) * userInputsBinaryNumber[index]), 0);
 
   cout << sumOfPositionValues << endl;
 

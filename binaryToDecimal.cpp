@@ -38,7 +38,6 @@ using namespace std;
  */
 int main()
 {
-
   string userInputsBinaryNumber;
 
   cin >> userInputsBinaryNumber;
@@ -113,3 +112,13 @@ int main()
 
   return 0;
 }
+
+// Class design
+
+// NumberConverter
+
+// .setInteger(9)
+// .setBinaryString('1001')
+
+// .toInteger() // 9
+// .toBinaryString() // '1001'
